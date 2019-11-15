@@ -1,11 +1,8 @@
 public class Client {
-
     public static void main(String[] args) {
         //Assume both arrays are sorted from small to big
-        //int[] a = {1,3,22,155,300,500};
-        //int[] b = {0,9,18,500};
-        int[] a = { 2, 3, 6, 7 , 8, 9};
-        int[] b = { 1, 4};
+        int[] a = {1,3,22,155,300,500};
+        int[] b = {0,9,18,500};
 
         System.out.println(nthLargest(1, a, b));
     }
@@ -18,7 +15,6 @@ public class Client {
     }
 
     private static int cut(int n, int[] a, int[] b, int an, int bn) {
-        System.out.println("step");
         //an is the index of n positions from the end of array a
         //bn is the index of n positions from the end of array b
         //Exit case for recursion (n is found)
